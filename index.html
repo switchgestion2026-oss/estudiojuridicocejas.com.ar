@@ -393,7 +393,7 @@
       </div>
     </div>
     <div class="about-copy reveal">
-      <span class="eyebrow">Exp. N° 02 — Sobre la abogada</span>
+      <span class="eyebrow">Exp. N° 02 — Sobre mí</span>
       <h2>Camila Ailén Cejas</h2>
       <p>
         Abogada y escribana, egresada de la Pontificia Universidad Católica Argentina (UCA) — Sede Paraná.
@@ -415,7 +415,7 @@
 <section id="trabajamos">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Exp. N° 03 — Cómo trabajamos</span>
+      <span class="eyebrow">Exp. N° 03 — Cómo trabajo</span>
       <h2>Un proceso claro, de principio a fin</h2>
       <p>Cuatro etapas simples para que sepas, desde el primer día, en qué instancia está tu caso o trámite.</p>
     </div>
@@ -562,9 +562,9 @@
     <div class="footer-bottom" style="margin-top:20px;">
       <p>© 2026 Estudio Jurídico Cejas. Todos los derechos reservados.</p>
       <div class="footer-legal">
-        <a href="aviso-legal.html">Aviso Legal</a>
-        <a href="privacidad.html">Política de Privacidad</a>
-        <a href="terminos.html">Términos de Uso</a>
+        <a href="legal.html#aviso">Aviso Legal</a>
+        <a href="legal.html#privacidad">Política de Privacidad</a>
+        <a href="legal.html#terminos">Términos de Uso</a>
       </div>
     </div>
   </div>
@@ -603,7 +603,7 @@
   const contactForm = document.getElementById('contactForm');
   const hiddenIframe = document.getElementById('hidden_iframe');
   let formSubmitted = false;
-  contactForm.addEventListener('submit', () => { formSubmitted = true; });
+  contactForm.addEventListener('submit', () => { formSubmitted = true; const btn = contactForm.querySelector('button[type="submit"]'); btn.disabled = true; btn.textContent = 'Enviando...'; });
   hiddenIframe.addEventListener('load', () => {
     if (formSubmitted) {
       contactForm.innerHTML = '<div class="form-success">¡Gracias! Ya recibí tu consulta. Te contacto a la brevedad.</div>';
