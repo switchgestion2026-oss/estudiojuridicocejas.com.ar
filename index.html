@@ -161,7 +161,8 @@
   .featured-card .spec-icon{ margin-bottom:18px; }
   .featured-card h3{ font-size:22px; margin-bottom:10px; }
   .featured-card .lead{ color:var(--ink-soft); font-size:14.5px; margin-bottom:22px; }
-  .featured-list{ display:grid; grid-template-columns:1fr 1fr; gap:9px 20px; }
+  .featured-list{ display:grid; grid-template-columns:1fr 1fr; gap:9px 20px; align-items:start; }
+  .featured-list.cols-4{ grid-auto-flow:column; grid-template-rows:repeat(4,auto); }
   @media (max-width:520px){ .featured-list{ grid-template-columns:1fr; } }
   .featured-list li{ font-size:13.5px; color:var(--ink-soft); display:flex; gap:8px; align-items:flex-start; line-height:1.4; }
   .featured-list li::before{ content:'—'; color:var(--gold-deep); flex-shrink:0; }
@@ -285,8 +286,8 @@
        <img src="logo.png" alt="Estudio Jurídico Cejas">
       </span>
       <span class="logo-text">
-        <span class="l1">Cejas</span>
-        <span class="l2">Estudio Jurídico</span>
+        <span class="l1">Estudio Jurídico Cejas</span>
+        <span class="l2">Abogada · Agente de Prop. Industrial INPI</span>
       </span>
     </a>
     <nav class="nav-links">
@@ -316,12 +317,13 @@
   </div>
 
   <div class="wrap">
-    <div style="display:flex; align-items:center; justify-content:center; margin-bottom:24px;">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:24px;">
       <span class="crest">
         <img src="logo.png" alt="Estudio Jurídico Cejas">
       </span>
+      <span style="font-family:var(--font-display); font-size:22px; font-weight:700; color:var(--burgundy); margin-top:10px;">Estudio Jurídico Cejas</span>
     </div>
-    <span class="eyebrow hero-eyebrow">Estudio jurídico — Paraná, Entre Ríos</span>
+
     <h1>Asesoramiento jurídico <em>para personas, profesionales y empresas.</em></h1>
     <p class="hero-sub">
       Un estudio organizado para que identifiques rápido el servicio que necesitás,
@@ -331,15 +333,6 @@
       <a href="#formulario" class="btn btn-primary">Solicitar una consulta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a href="#empresas" class="btn btn-outline">Conocer servicios</a>
     </div>
-    <div class="hero-trust">
-      <span>Atención personalizada</span>
-      <span class="sep">◆</span>
-      <span>Consultas presenciales y virtuales</span>
-      <span class="sep">◆</span>
-      <span>Matrícula provincial y federal</span>
-      <span class="sep">◆</span>
-      <span>Agente de Propiedad Industrial INPI</span>
-    </div>
   </div>
 </section>
 
@@ -348,7 +341,7 @@
     <div class="cred-item reveal">
       <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 4-9 4-9-4 9-4z"/><path d="M6 10v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M21 7v6"/></svg></div>
       <div class="cred-title">Abogada Matriculada</div>
-      <p class="cred-desc">CAER Entre Ríos · Justicia Federal</p>
+      <p class="cred-desc">Entre Ríos y Justicia Federal</p>
     </div>
     <div class="cred-item featured reveal">
       <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
@@ -357,13 +350,13 @@
     </div>
     <div class="cred-item reveal">
       <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0112 2a7 7 0 017 7.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg></div>
-      <div class="cred-title">Presencial y Virtual</div>
-      <p class="cred-desc">Consultas en Paraná o a distancia</p>
+      <div class="cred-title">Atención</div>
+      <p class="cred-desc">Presencial y virtual — consultas en Paraná y modalidad a distancia según el asunto</p>
     </div>
     <div class="cred-item reveal">
       <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 12l3 3 5-5"/></svg></div>
-      <div class="cred-title">Confidencialidad</div>
-      <p class="cred-desc">Absoluta, en cada consulta</p>
+      <div class="cred-title">Asesoramiento</div>
+      <p class="cred-desc">Para personas y empresas</p>
     </div>
   </div>
 </div>
@@ -373,7 +366,7 @@
     <div class="section-head reveal">
       <span class="eyebrow">Exp. N° 01 — Empresas y Emprendimientos</span>
       <h2>Servicios para empresas, profesionales y emprendimientos</h2>
-      <p>Asesoramiento jurídico para organizar, proteger y hacer crecer un negocio: desde el registro de una marca hasta la constitución de una sociedad.</p>
+      <p>Asesoramiento jurídico para organizar y proteger un negocio, desde el registro de una marca hasta la constitución y funcionamiento de una sociedad.</p>
     </div>
 
     <div class="featured-grid reveal">
@@ -381,8 +374,8 @@
         <span class="featured-badge">Agente de Propiedad Industrial — INPI Mat. N° 3294</span>
         <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L4 6v6c0 5.5 3.4 9 8 10 4.6-1 8-4.5 8-10V6l-8-4z"/><circle cx="12" cy="10" r="1.6"/></svg></div>
         <h3>Registro de Marcas</h3>
-        <p class="lead">Servicio propio y de referencia del estudio, con acompañamiento completo del trámite ante el INPI.</p>
-        <ul class="featured-list">
+        <p class="lead">Asesoramiento especializado y acompañamiento integral durante el trámite de registro ante el INPI.</p>
+        <ul class="featured-list cols-4">
           <li>Análisis previo de registrabilidad</li>
           <li>Búsqueda de antecedentes</li>
           <li>Clasificación</li>
@@ -414,8 +407,8 @@
         <p>Redacción y revisión de contratos comerciales y convenios entre partes, como servicio complementario dentro del asesoramiento a empresas.</p>
       </div>
       <div class="secondary-card">
-        <h4>Juicios Ejecutivos y Cobranzas</h4>
-        <p>Recupero de créditos para profesionales y empresas, además de la gestión de juicios ejecutivos puntuales.</p>
+        <h4>Juicios Ejecutivos</h4>
+        <p>Asesoramiento y representación para el cobro judicial de créditos por vía ejecutiva.</p>
       </div>
     </div>
   </div>
@@ -474,14 +467,13 @@
       <span class="eyebrow">Exp. N° 03 — Sobre el Estudio</span>
       <h2>Camila Ailén Cejas</h2>
       <p>
-        Soy abogada matriculada en la Provincia de Entre Ríos y ante la Justicia Federal, y Agente de Propiedad
-        Industrial matriculada ante el INPI.
+        Soy abogada matriculada en la Provincia de Entre Ríos y ante la Justicia Federal, además de Agente de
+        Propiedad Industrial matriculada ante el INPI.
       </p>
       <p>
-        Mi recorrido académico también comprende estudios de Notariado y formación en mediación, que complementan
-        mi práctica jurídica y enriquecen el análisis de cuestiones societarias, contractuales, inmobiliarias y
-        patrimoniales. Actualmente, desarrollo mi actividad profesional exclusivamente en el ejercicio de la
-        abogacía.
+        Soy también Escribana, formación que complementa mi práctica jurídica y aporta una mirada especialmente
+        valiosa en el abordaje de cuestiones societarias, contractuales, inmobiliarias y patrimoniales.
+        Actualmente, mi actividad profesional se encuentra enfocada exclusivamente en el ejercicio de la abogacía.
       </p>
       <ul class="credentials">
         <li><span class="dash">—</span> Mat. CAER N° 11.074, T° I, F° 300</li>
@@ -606,7 +598,7 @@
           <div class="form-field"><label for="nombre">Nombre y apellido</label><input type="text" id="nombre" name="nombre" required></div>
           <div class="form-field"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
           <div class="form-field"><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono"></div>
-          <div class="form-field"><label for="localidad">Localidad</label><input type="text" id="localidad" name="localidad"></div>           <div class="form-field"><label for="area">Área/temática</label>             <select id="area" name="area" required>               <option value="">Seleccioná una opción</option>               <option value="Registro de Marcas">Registro de Marcas</option>               <option value="Sociedades y Empresas">Sociedades y Empresas</option>               <option value="Contratos y Convenios">Contratos y Convenios</option>               <option value="Juicios Ejecutivos y Cobranzas">Juicios Ejecutivos y Cobranzas</option>               <option value="Amparos">Amparos</option>               <option value="Derecho Inmobiliario y Patrimonial">Derecho Inmobiliario y Patrimonial</option>               <option value="Derecho de Familia">Derecho de Familia</option>               <option value="Sucesiones">Sucesiones</option>               <option value="Derecho Laboral">Derecho Laboral</option>               <option value="Defensa del Consumidor">Defensa del Consumidor</option>               <option value="Derecho Administrativo">Derecho Administrativo</option>               <option value="Otro">Otro</option>             </select>           </div>           <div class="form-field"><label for="mensaje">Contanos brevemente de qué se trata tu consulta</label><textarea id="mensaje" name="mensaje" required></textarea></div>           <div class="form-field">             <label>Modalidad de la consulta</label>             <div class="modalidad-toggle">               <label class="modalidad-pill"><input type="radio" name="modalidad" value="Presencial" required><span>Presencial</span></label>               <label class="modalidad-pill"><input type="radio" name="modalidad" value="Virtual"><span>Virtual</span></label>             </div>           </div>           <div class="form-field"><label for="disponibilidad">Disponibilidad horaria</label><input type="text" id="disponibilidad" name="disponibilidad" placeholder="Ej: lunes a viernes por la tarde"></div>
+          <div class="form-field"><label for="localidad">Localidad</label><input type="text" id="localidad" name="localidad"></div>           <div class="form-field"><label for="area">Área/temática</label>             <select id="area" name="area" required>               <option value="">Seleccioná una opción</option>               <option value="Registro de Marcas">Registro de Marcas</option>               <option value="Sociedades y Empresas">Sociedades y Empresas</option>               <option value="Contratos y Convenios">Contratos y Convenios</option>               <option value="Juicios Ejecutivos">Juicios Ejecutivos</option>               <option value="Amparos">Amparos</option>               <option value="Derecho Inmobiliario y Patrimonial">Derecho Inmobiliario y Patrimonial</option>               <option value="Derecho de Familia">Derecho de Familia</option>               <option value="Sucesiones">Sucesiones</option>               <option value="Derecho Laboral">Derecho Laboral</option>               <option value="Defensa del Consumidor">Defensa del Consumidor</option>               <option value="Derecho Administrativo">Derecho Administrativo</option>               <option value="Otro">Otro</option>             </select>           </div>           <div class="form-field"><label for="mensaje">Contanos brevemente de qué se trata tu consulta</label><textarea id="mensaje" name="mensaje" required></textarea></div>           <div class="form-field">             <label>Modalidad de la consulta</label>             <div class="modalidad-toggle">               <label class="modalidad-pill"><input type="radio" name="modalidad" value="Presencial" required><span>Presencial</span></label>               <label class="modalidad-pill"><input type="radio" name="modalidad" value="Virtual"><span>Virtual</span></label>             </div>           </div>           <div class="form-field"><label for="disponibilidad">Disponibilidad horaria</label><input type="text" id="disponibilidad" name="disponibilidad" placeholder="Ej: lunes a viernes por la tarde"></div>
           <label class="form-check"><input type="checkbox" required> Acepto la <a href="legal.html#privacidad" target="_blank" rel="noopener" style="color:var(--burgundy); text-decoration:underline;">Política de Privacidad</a> y el tratamiento de mis datos para ser contactado/a.</label>
           <button type="submit" class="btn btn-primary" style="width:100%;">Enviar consulta</button>
           <p class="form-note">Al enviar este formulario, tu consulta llega directo al estudio. Te respondo a la brevedad.</p>
